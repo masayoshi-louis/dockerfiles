@@ -10,7 +10,7 @@ ENV LANGUAGE en_US:en
 
 RUN apt-get update
 
-RUN apt-get install -y python3-dev python3-setuptools python3-h5py libhdf5-dev git
+RUN apt-get install -y python3-dev python3-setuptools python3-h5py libhdf5-dev git libatlas-dev
 
 RUN easy_install3 pip
 
