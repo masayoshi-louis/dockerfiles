@@ -16,3 +16,8 @@ RUN easy_install3 pip
 
 RUN pip3 install git+git://github.com/mila-udem/blocks.git@stable -r https://raw.githubusercontent.com/mila-udem/blocks/stable/requirements.txt
 
+RUN git clone https://github.com/mila-udem/picklable-itertools.git
+
+RUN python3 picklable-itertools/setup.py install
+
+RUN rm -rf picklable-itertools
